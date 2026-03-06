@@ -1,51 +1,80 @@
-/* Reset some default styles */
-* {
-    margin: 20;
-    padding: 20;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 40px 0;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: #2b5876;
+    color: #fff;
+    padding: 40px 0 20px 0;
     text-align: center;
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav a {
-    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-}
-
-nav a:hover {
-    background: #e8491d;
-    border-radius:#333;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    margin: 0 18px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover {
+    color: #ffd700;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 40px 30px;
+    max-width: 420px;
     width: 100%;
-}
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    margin-top: 0;
+    color: #2b5876;
+  }
+  .card p {
+    color: #444;
+    margin-bottom: 30px;
+  }
+  .cta-btn {
+    background: #2b5876;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover {
+    background: #4e4376;
+  }
+  footer {
+    background: #2b5876;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+  }
